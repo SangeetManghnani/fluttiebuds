@@ -32,8 +32,6 @@ class _MentorsManagerState extends State<MentorsManager> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    // return Scaffold(appBar: ,)
     return new Column(
       children: <Widget>[
         Container(

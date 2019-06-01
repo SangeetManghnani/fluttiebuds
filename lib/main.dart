@@ -6,7 +6,6 @@ void main() => runApp(FluttieBuds());
 class FluttieBuds extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
       home: FluttieRoot(),
       debugShowCheckedModeBanner: false,

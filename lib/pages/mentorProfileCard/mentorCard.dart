@@ -19,20 +19,6 @@ final _mentorThumbnail = Padding(
       backgroundColor: Colors.transparent,
     ));
 
-// final _mentorThumbnail = Container(
-//   margin: EdgeInsets.symmetric(vertical: 16.0),
-//   alignment: FractionalOffset.centerLeft,
-//   decoration: BoxDecoration(
-//      shape: BoxShape.circle,
-//      borderRadius: new BorderRadius.circular(8.0),
-//   ),
-//   child: new Image(
-//     image: new NetworkImage('https://miro.medium.com/fit/c/256/256/1*wAzu9YxUdm0s71CRHGGlmw.jpeg'),
-//     height: 92.0,
-//     width: 92.0,
-//   ),
-// );
-
 final _mentorDetails = new Container(
   height: 124.0,
   margin: new EdgeInsets.only(left: 46.0),
