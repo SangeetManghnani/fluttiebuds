@@ -51,7 +51,7 @@ class RegistrationFormState extends State<RegistrationForm> {
                         color: Color(0xFF333366),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20)),
-                        elevation: 10,
+                        elevation: 5,
                         child: Padding(
                             padding: EdgeInsets.all(20),
                             child: Column(

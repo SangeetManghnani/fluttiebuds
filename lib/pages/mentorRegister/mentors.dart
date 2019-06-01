@@ -4,7 +4,6 @@ import 'package:fluttiebuds/pages/mentorProfileCard/mentorCard.dart';
 class Mentors extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         body: Column(
       children: <Widget>[
@@ -51,7 +50,6 @@ class MentorList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return _getBodyWidget();
   }
 }

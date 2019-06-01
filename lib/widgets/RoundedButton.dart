@@ -21,7 +21,14 @@ class RoundedButton extends StatelessWidget {
           decoration: BoxDecoration(
             // Box decoration takes a gradient
             shape: BoxShape.rectangle,
-            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderRadius: BorderRadius.all(Radius.circular(50)),
+            boxShadow: <BoxShadow>[
+              new BoxShadow(
+                color: Colors.black12,
+                blurRadius: 10.0,
+                offset: new Offset(5.0, 10.0),
+              )
+            ],
             gradient: RadialGradient(
               // Where the linear gradient begins and ends
               center: const Alignment(0.2, 0.2), // near the top right
@@ -37,7 +44,7 @@ class RoundedButton extends StatelessWidget {
           child: Center(
             child: Text(
               title,
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white,fontSize: 20),
             ),
           ),
         ));

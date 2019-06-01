@@ -3,7 +3,7 @@ import 'package:fluttiebuds/pages/menteeRegister/MenteeRegisterRoot.dart';
 import 'package:fluttiebuds/pages/mentorRegister/MentorRegisterRoot.dart';
 import 'package:fluttiebuds/widgets/LottieAnimation.dart';
 import 'package:fluttiebuds/widgets/WavyClipper.dart';
-import 'package:fluttiebuds/widgets/roundedBackground.dart';
+import 'package:fluttiebuds/widgets/RoundedButton.dart';
 
 class FluttieRoot extends StatelessWidget {
   setMentee(BuildContext context) {
@@ -69,7 +69,13 @@ class FluttieRoot extends StatelessWidget {
                 padding: 20,
                 margin: 50,
                 onPress: () => setMentor(context)),
-            Icon(Icons.swap_vert),
+            CircleAvatar(
+              child: Icon(
+                Icons.swap_vert,
+                color: Colors.white,
+              ),
+              backgroundColor: Color(0xFF333366),
+            ),
             RoundedButton(
                 title: 'Mentee',
                 padding: 20,
