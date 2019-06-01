@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
-import 'package:fluttiebuds/pages/mentorRegister/MentorRegisterRoot.dart';
 
 class RoundedButton extends StatelessWidget {
   final String title;
@@ -10,41 +10,36 @@ class RoundedButton extends StatelessWidget {
 
   RoundedButton({this.title, this.padding, this.margin, this.onPress});
   @override
-   Widget build(BuildContext context) {
-    // TODO: implement build
+  Widget build(BuildContext context) {
     return new InkWell(
-      onTap: () {
-        onPress();
-      },
-      child: Container(
-      padding: EdgeInsets.all(padding),
-      margin: EdgeInsets.all(margin),
-      decoration: BoxDecoration(
-        // Box decoration takes a gradient
-        shape: BoxShape.rectangle,
-        borderRadius: BorderRadius.all(Radius.circular(20)),
-        gradient: LinearGradient(
-          // Where the linear gradient begins and ends
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-          // Add one stop for each color. Stops should increase from 0 to 1
-          stops: [0.1, 0.5, 0.7, 0.9],
-          colors: [
-            // Colors are easy thanks to Flutter's Colors class.
-            Colors.indigo[800],
-            Colors.indigo[700],
-            Colors.indigo[600],
-            Colors.indigo[400],
-          ],
-        ),
-      ),
-      child: Center(
-        child: Text(
-          title,
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
-    )
-    );
+        onTap: () {
+          onPress();
+        },
+        child: Container(
+          padding: EdgeInsets.all(padding),
+          margin: EdgeInsets.all(margin),
+          decoration: BoxDecoration(
+            // Box decoration takes a gradient
+            shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+            gradient: RadialGradient(
+              // Where the linear gradient begins and ends
+              center: const Alignment(0.2, 0.2), // near the top right
+              radius: 2,
+              colors: [
+                // Colors are easy thanks to Flutter's Colors class.
+                Color(0xFF333366),
+                Color(0xFF272d5a),
+                Color(0xFF1b264e),
+              ],
+            ),
+          ),
+          child: Center(
+            child: Text(
+              title,
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ));
   }
 }
