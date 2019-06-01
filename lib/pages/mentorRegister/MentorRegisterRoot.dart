@@ -9,8 +9,25 @@ class MentorRegister extends StatelessWidget {
         body: Column(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: MediaQuery.of(context).size.height *0.08, right: 5.0, left: 5.0, bottom: 2.0),
-          child: Text('Super Mentors', style: TextStyle(fontSize: 20.0,),),
+          alignment: FractionalOffset(0.25, 0),
+          margin: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * 0.08,
+              right: 5.0,
+              left: 10.0,
+              bottom: 0.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                'Super',
+                style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w200),
+              ),
+              Text(
+                'Mentors',
+                style: TextStyle(fontSize: 30.0,fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
         ),
         Expanded(child: MentorList('Arvind'))
       ],

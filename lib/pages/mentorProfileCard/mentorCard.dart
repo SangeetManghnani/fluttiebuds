@@ -16,7 +16,13 @@ import 'package:flutter/material.dart';
 Widget mentorCard(BuildContext context, int index) {
     return Container(
       height: 120.0,
-      margin: EdgeInsets.symmetric(vertical: 16.0, horizontal: 24.0),
+      margin: EdgeInsets.only(
+        top: 0.0,
+        bottom: 20.0,
+        right: 24.0,
+        left: 24.0
+      ),
+      // margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 24.0),
       child: new Stack(
         children: <Widget>[_mentorThumbnail, _mentorDetails],
       ),
