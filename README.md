@@ -1,16 +1,27 @@
-# fluttiebuds
+# Flutter International Hackathon - 2019
 
-A new Flutter project.
+## Oragnised by MavenHive, Bangalore
 
-## Getting Started
+## Introduction
 
-This project is a starting point for a Flutter application.
+Fluttie buds is an Open Source platform that connects Mentors and Mentees.
+This will help Flutter community connnect with each other - learn & grow, together!
 
-A few resources to get you started if this is your first Flutter project:
+End users:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+1. Mentor:
+	A mentor can register/sign-in with the App, mention the skills they are more confortable with, add their communication handles, link an avatar, etc. 
+2. Mentee:
+	A mentee will be able to register_sign-in to the App. He_She can further lookup on the existing mentors, and based on matching skills - they can communicate with them directly through their preferred medium.
+	
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+- Screenshots:
+	
+![](./ImagesReadMe/Screenshot_20190601-171949.jpg)
+![](./ImagesReadMe/Screenshot_20190601-171956.jpg)
+![](./ImagesReadMe/Screenshot_20190601-172001.jpg)
+![](./ImagesReadMe/Screenshot_20190601-172009.jpg)
+
+- Developed by:
+ - Sangeet Manghnani (sangeet.manghnani@gmail.com)
+ - Yash Soni (ysoni96@gmail.com)
